@@ -4,12 +4,40 @@
 <meta charset="ISO-8859-1">
 <title>La mia calcolatrice</title>
 <style>
-	title{
-		text-decoration-color: chartreuse;
-	}
+	
 	body{
-		background-image: url=url("https://lofficina.eu/wp-content/uploads/2019/12/cielofebbraio2020_600x398.jpg");
+        background-image: url(https://c.wallhere.com/photos/a2/ec/hacking_hackers-12801.png!d);
+		font-family: sans-serif;
+		color: rgb(50, 158, 31);
 	}
+	::placeholder { 
+		color: rgb(24, 102, 112); 
+	background-color: rgb(67, 195, 204);
+	}
+	button {
+text-decoration: none;
+ color: rgb(7, 131, 148);
+ font-weight: bold;
+ padding: 6px 12px;
+ font-size: 12px;
+ border-radius: 8px;
+ background-color: #60ebf5;
+ box-shadow: 0 5px 5px #4dceeb, 0 9px 0 #0882a7, 0px 9px 10px rgba(35, 123, 196, 0.4), inset 0px 2px 9px rgba(10, 127, 148, 0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(23, 110, 99, 0.452);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -2px 0px rgba(0,0,0,0.2);
+	}
+	boton:hover {
+ box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+ color: #fff !important;}
+ boton:active {
+ top: 7px;
+ box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+ color: #fff !important;
+}
+ 
 </style>
 </head>
 <body>
@@ -25,13 +53,17 @@
 						<label for="numero1">Numero 1</label> <input type="number"
 							class="form-control" id="numero1"
 							placeholder="Inserisci un numero">
+							
 					</div>
+<br>				
 					<div class="form-group">
 						<label for="numero2">Numero 2</label> <input type="number"
 							class="form-control" id="numero2"
 							placeholder="inserisci il secondo numero">
-					</div>
-
+					
+						</div>
+<br>
+<br>
 					<div class="form-group">
 						<label for="operazione">Operazione</label> <select id="operazione"
 							class="form-control">
@@ -42,13 +74,16 @@
 							<option value="4">divisione</option>
 						</select>
 					</div>
+<br>
 
 					<button id="eseguiOperazione" class="btn btn-primary mb-3">esegui</button>
-
+					
+<br>
+<br>				
 					<div class="form-group">
 						<label for="risultato">Risultato</label> <input type="text"
 							class="form-control" id="risultato"
-							placeholder="Qui ci sar� il risultato" disabled>
+							placeholder="Qui ci sarà il risultato" disabled>
 					</div>
 				</div>
 			</div>

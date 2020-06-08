@@ -12,21 +12,22 @@ public class SalutiController {
 	
 	@RequestMapping("/")
 	public ModelAndView home() {
-		ModelAndView model= new ModelAndView();
+		final ModelAndView model = new ModelAndView();
 		model.setViewName("home");
 		return model;
 	}
-	
+
 	@RequestMapping("/mio profilo")
 	public ModelAndView unSaluto() {
-		ModelAndView model= new ModelAndView();
-		model.addObject("nome", "Emiliano Mercado"); 
+		final ModelAndView model = new ModelAndView();
+		model.addObject("nome", "Emiliano Mercado");
 		model.setViewName("il mio profilo");
 		return model;
 	}
+
 	@RequestMapping("/valori")
 	public ModelAndView valori() {
-		ModelAndView model= new ModelAndView();
+		final ModelAndView model = new ModelAndView();
 		model.addObject("calcoliEmi", "calcoli");
 		model.setViewName("valori");
 		return model;
